@@ -21,4 +21,5 @@ if(is_resource($query))
 }else{
 
 	print 'query =true'.'mysql_rows=:'.mysql_affected_rows();
+	
 }
