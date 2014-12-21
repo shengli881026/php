@@ -8,7 +8,15 @@ session_start();
  2、手动通过URL传值、隐藏表单传递session id。
  3、用文件、数据库等形式保存session_id,在跨页过程中手动调用。
 */
-
+/**
+ * session 设置过期时间 在php.ini 中配置
+ * 可以在PHP中,设置php.ini,找到 session.gc_maxlifetime = 1440 #(PHP5默认24分钟)
+ -------------------session 的过期时间------------------------
+ session.gc_probability = 1 
+ session.gc_divisor = 1000
+ //garbage collection 有个概率的，1/1000就是session 1000次才有一次被回收。
+ //php.ini文件中的 gc_maxlifetime 变量就可以延长session的过期时间了
+*/
 $s_name = session_name();
 if(empty($_SESSION['username']) || empty($_COOKIE[$s_name]))
 {
