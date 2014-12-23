@@ -65,3 +65,4 @@ $user->user_name='abcd';
 echo $user->user_name."<br/>";
 echo '<pre/>';
 print_r($user->getUserInfo());
+echo '----'; 
