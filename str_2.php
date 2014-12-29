@@ -48,13 +48,16 @@ num_format($n_str);
 
 function num_format($n_str)
 {
-	$str_len = strlen($n_str);
-	$n_int = intval($str_len/3);
-	//echo substr($n_str,6,3);
-//	$new_str ='';
-	for($i=0;$i<$n_int;$i++)
+	$ln = strlen($n_str);
+	$m = $ln % 3;
+	$new_str;
+	for($i=0;$i<$ln;$i++)
 	{
-		$new_str[]=substr($n_str,$i*3,3);	
+		if($i>0 && $i % 3==$m)
+		{
+			$new_str .=',';	
+		}
+		$new_str .=$n_str[$i];
 	}
-	echo join(',',$new_str);	
+	echo $new_str;
 }
