@@ -9,5 +9,5 @@ while ($worker->work());
 function echo_function($job)
 {
 	//return $job->returnCode();
-	return strrev($job->workload()).'----';
+	return strrev($job->workload()).'+++---****!!!!!!!-*******';
 }
