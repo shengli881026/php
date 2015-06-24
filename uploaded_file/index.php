@@ -150,7 +150,7 @@ function dbquery($saler_id,$data=null){
 	
 	//mysql_connect
 	if(!empty($data)){
-		$mysql_obj = @mysql_connect('192.168.1.202:3306','hd_user','5tredfg20141208&WSX');
+		$mysql_obj = @mysql_connect('192.168.5.101:3306','root','11111&aaa');
 		$mysql_db  = @mysql_select_db('hd_huodong',$mysql_obj);
 		$sql ="update disperse_dealer_saler set photo='".$data."' where id=".$saler_id." limit 1";
 		//$sql="INSERT INTO `luck_ssq_blue` (`lottery_type`, `lottery_no`, `source_type`, `result`, `prize_level`, `prize`,`create_time`)VALUES ('SSQ', '203113', 'zhcw', '11', '1', '200032.12','2014-12-05 12:00:00')";
