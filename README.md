@@ -1,14 +1,24 @@
+## 欢迎:
+ 个人工作中总结的PHP一些常用的技巧，欢迎大家拍砖。
+
+
+
+
+
+
+
+## Git 相关操作
 #### Git初始化设置
 
       git config --global user.name "xxx" 
       git config --global user.email "xxx@haozu.com"
       ssh-keygen -t rsa -C "xxx@haozu.com"
       cat ~/.ssh/id_rsa.pub 复制公钥到下面链接点击Add Key完成添加
-   [添加公钥到gitlab](http://gitlab.corp.haozu.com/profile/keys "点击进入")
+   [添加公钥到gitlab](http://gitlab "点击进入")
        
 #### Git克隆项目 
 
-      git clone git@gitlab.corp.haozu.com:rd/mob.git
+      git clone git@gitlab.com:rd/mob.git
   
 #### git常用命令
 
@@ -26,7 +36,3 @@
       git branch -d/-D xxx 删除本地分支（区别是是否被merged）
       git diff xxx 查看文件改动
       git log xxx 查看文件变动日志
-
-
-#### 好租助手下载地址
-![image](http://fang-oss.haozu.com/cms/index/2017/09/15/GAM5j2MFEk.png)
